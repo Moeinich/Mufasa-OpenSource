@@ -1,0 +1,1661 @@
+[
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "Trade - Free",
+    "IndexPosition": "01-01",
+    "World": 301
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Trade - Members",
+    "IndexPosition": "01-02",
+    "World": 302
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "01-03",
+    "World": 303
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Trouble Brewing",
+    "IndexPosition": "01-04",
+    "World": 304
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Falador Party Room",
+    "IndexPosition": "01-05",
+    "World": 305
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Barbarian Assault",
+    "IndexPosition": "01-06",
+    "World": 306
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Wintertodt",
+    "IndexPosition": "01-07",
+    "World": 307
+  },
+  {
+    "Type": "PvP",
+    "Country": "United Kingdom",
+    "Activity": "Wilderness PK - Free",
+    "IndexPosition": "01-08",
+    "World": 308
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Wintertodt",
+    "IndexPosition": "01-09",
+    "World": 309
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Barbarian Assault",
+    "IndexPosition": "01-10",
+    "World": 310
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Wintertodt",
+    "IndexPosition": "01-11",
+    "World": 311
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Group Skilling",
+    "IndexPosition": "01-12",
+    "World": 312
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Group Skilling",
+    "IndexPosition": "01-13",
+    "World": 313
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Brimhaven Agility Arena",
+    "IndexPosition": "01-14",
+    "World": 314
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Fishing Trawler",
+    "IndexPosition": "01-15",
+    "World": 315
+  },
+  {
+    "Type": "PvP",
+    "Country": "United Kingdom",
+    "Activity": "Wilderness PK - Free",
+    "IndexPosition": "01-16",
+    "World": 316
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "01-17",
+    "World": 317
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Bounty Hunter World",
+    "IndexPosition": "01-18",
+    "World": 318
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Soul Wars",
+    "IndexPosition": "01-19",
+    "World": 320
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Sulliuscep cutting",
+    "IndexPosition": "01-20",
+    "World": 321
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Clan Wars - Free-for-all",
+    "IndexPosition": "01-21",
+    "World": 322
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Volcanic Mine",
+    "IndexPosition": "01-22",
+    "World": 323
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Royal Titans",
+    "IndexPosition": "01-23",
+    "World": 324
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "01-24",
+    "World": 325
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "LMS Casual",
+    "IndexPosition": "02-01",
+    "World": 326
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Ourania Altar",
+    "IndexPosition": "02-02",
+    "World": 327
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Royal Titans",
+    "IndexPosition": "02-03",
+    "World": 328
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Tombs of Amascut",
+    "IndexPosition": "02-04",
+    "World": 329
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "House Party, Gilded Altar",
+    "IndexPosition": "02-05",
+    "World": 330
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Tombs of Amascut",
+    "IndexPosition": "02-06",
+    "World": 331
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Nex FFA",
+    "IndexPosition": "02-07",
+    "World": 332
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Tombs of Amascut",
+    "IndexPosition": "02-08",
+    "World": 333
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Castle Wars 1",
+    "IndexPosition": "02-09",
+    "World": 334
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "02-10",
+    "World": 335
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "ToA FFA",
+    "IndexPosition": "02-11",
+    "World": 336
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Nightmare of Ashihama",
+    "IndexPosition": "02-12",
+    "World": 337
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "ToA FFA",
+    "IndexPosition": "02-13",
+    "World": 338
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "02-14",
+    "World": 339
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Varlamore PvM",
+    "IndexPosition": "02-15",
+    "World": 340
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Tempoross",
+    "IndexPosition": "02-16",
+    "World": 341
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Role-playing",
+    "IndexPosition": "02-17",
+    "World": 342
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "02-18",
+    "World": 343
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Pest Control",
+    "IndexPosition": "02-19",
+    "World": 344
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "Deadman",
+    "IndexPosition": "02-20",
+    "World": 345
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Agility Training",
+    "IndexPosition": "02-21",
+    "World": 346
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "02-22",
+    "World": 347
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "02-23",
+    "World": 348
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "2000 skill total",
+    "IndexPosition": "02-24",
+    "World": 349
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Soul Wars",
+    "IndexPosition": "03-01",
+    "World": 350
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "03-02",
+    "World": 351
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "03-03",
+    "World": 352
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "1250 skill total",
+    "IndexPosition": "03-04",
+    "World": 353
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Castle Wars 2",
+    "IndexPosition": "03-05",
+    "World": 354
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "03-06",
+    "World": 355
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "03-07",
+    "World": 356
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "03-08",
+    "World": 357
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "03-09",
+    "World": 358
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "03-10",
+    "World": 359
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "03-11",
+    "World": 360
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "2000 skill total",
+    "IndexPosition": "03-12",
+    "World": 361
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "TzHaar Fight Pit",
+    "IndexPosition": "03-13",
+    "World": 362
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "2200 skill total",
+    "IndexPosition": "03-14",
+    "World": 363
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "1250 skill total",
+    "IndexPosition": "03-15",
+    "World": 364
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "High Risk World",
+    "IndexPosition": "03-16",
+    "World": 365
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "1500 skill total",
+    "IndexPosition": "03-17",
+    "World": 366
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "03-18",
+    "World": 367
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "03-19",
+    "World": 368
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "Wilderness PK - Members",
+    "IndexPosition": "03-20",
+    "World": 369
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Fishing Trawler",
+    "IndexPosition": "03-21",
+    "World": 370
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "03-22",
+    "World": 371
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "750 skill total",
+    "IndexPosition": "03-23",
+    "World": 372
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "1750 skill total",
+    "IndexPosition": "03-24",
+    "World": 373
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Theatre of Blood",
+    "IndexPosition": "04-01",
+    "World": 374
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Zalcano",
+    "IndexPosition": "04-02",
+    "World": 375
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Theatre of Blood",
+    "IndexPosition": "04-03",
+    "World": 376
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Mort\u0027ton temple, Rat Pits",
+    "IndexPosition": "04-04",
+    "World": 377
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Zalcano",
+    "IndexPosition": "04-05",
+    "World": 378
+  },
+  {
+    "Type": "PvP",
+    "Country": "United Kingdom",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "04-06",
+    "World": 379
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "04-07",
+    "World": 380
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "500 skill total",
+    "IndexPosition": "04-08",
+    "World": 381
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "04-09",
+    "World": 382
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "Castle Wars - Free",
+    "IndexPosition": "04-10",
+    "World": 383
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "04-11",
+    "World": 384
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Brimhaven Agility",
+    "IndexPosition": "04-12",
+    "World": 385
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "04-13",
+    "World": 386
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "04-14",
+    "World": 387
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Forestry",
+    "IndexPosition": "04-15",
+    "World": 388
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Wintertodt",
+    "IndexPosition": "04-16",
+    "World": 389
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "LMS Competitive",
+    "IndexPosition": "04-17",
+    "World": 390
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "1750 skill total",
+    "IndexPosition": "04-18",
+    "World": 391
+  },
+  {
+    "Type": "PvP",
+    "Country": "Australia",
+    "Activity": "PvP World",
+    "IndexPosition": "04-19",
+    "World": 392
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "750 skill total",
+    "IndexPosition": "04-20",
+    "World": 393
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "04-21",
+    "World": 394
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "04-22",
+    "World": 395
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "2000 skill total",
+    "IndexPosition": "04-23",
+    "World": 396
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "04-24",
+    "World": 397
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "Forestry",
+    "IndexPosition": "05-01",
+    "World": 398
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "05-02",
+    "World": 399
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "500 skill total",
+    "IndexPosition": "05-03",
+    "World": 413
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "750 skill total",
+    "IndexPosition": "05-04",
+    "World": 414
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "2200 skill total",
+    "IndexPosition": "05-05",
+    "World": 415
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "1500 skill total",
+    "IndexPosition": "05-06",
+    "World": 416
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-07",
+    "World": 417
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-08",
+    "World": 418
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "500 skill total",
+    "IndexPosition": "05-09",
+    "World": 419
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "1500 skill total",
+    "IndexPosition": "05-10",
+    "World": 420
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-11",
+    "World": 421
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Tempoross",
+    "IndexPosition": "05-12",
+    "World": 422
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Fresh Start",
+    "IndexPosition": "05-13",
+    "World": 423
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "05-14",
+    "World": 424
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "-",
+    "IndexPosition": "05-15",
+    "World": 425
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "House Party, Gilded Altar",
+    "IndexPosition": "05-16",
+    "World": 426
+  },
+  {
+    "Type": "Free",
+    "Country": "Australia",
+    "Activity": "500 skill total",
+    "IndexPosition": "05-17",
+    "World": 427
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "2000 skill total",
+    "IndexPosition": "05-18",
+    "World": 428
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "1250 skill total",
+    "IndexPosition": "05-19",
+    "World": 429
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-20",
+    "World": 430
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-21",
+    "World": 431
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "750 skill total",
+    "IndexPosition": "05-22",
+    "World": 432
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "05-23",
+    "World": 433
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "Forestry",
+    "IndexPosition": "05-24",
+    "World": 434
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-01",
+    "World": 435
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-02",
+    "World": 436
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-03",
+    "World": 437
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-04",
+    "World": 438
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-05",
+    "World": 439
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-06",
+    "World": 440
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-07",
+    "World": 441
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "06-08",
+    "World": 443
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Forestry",
+    "IndexPosition": "06-09",
+    "World": 444
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Guardians of the Rift",
+    "IndexPosition": "06-10",
+    "World": 445
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Role-playing",
+    "IndexPosition": "06-11",
+    "World": 446
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "1250 skill total",
+    "IndexPosition": "06-12",
+    "World": 447
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "1500 skill total",
+    "IndexPosition": "06-13",
+    "World": 448
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "1750 skill total",
+    "IndexPosition": "06-14",
+    "World": 449
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "2200 skill total",
+    "IndexPosition": "06-15",
+    "World": 450
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-16",
+    "World": 451
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-17",
+    "World": 452
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-18",
+    "World": 453
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-19",
+    "World": 454
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-20",
+    "World": 455
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-21",
+    "World": 456
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-22",
+    "World": 458
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "06-23",
+    "World": 459
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Tempoross",
+    "IndexPosition": "06-24",
+    "World": 463
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Guardians of the Rift",
+    "IndexPosition": "07-01",
+    "World": 464
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "House Party, Gilded Altar",
+    "IndexPosition": "07-02",
+    "World": 465
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "07-03",
+    "World": 466
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "1750 skill total",
+    "IndexPosition": "07-04",
+    "World": 467
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "500 skill total",
+    "IndexPosition": "07-05",
+    "World": 468
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "LMS Casual",
+    "IndexPosition": "07-06",
+    "World": 469
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "High Risk World",
+    "IndexPosition": "07-07",
+    "World": 474
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-08",
+    "World": 475
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-09",
+    "World": 476
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Clan Recruitment",
+    "IndexPosition": "07-10",
+    "World": 477
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Guardians of the Rift",
+    "IndexPosition": "07-11",
+    "World": 478
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "07-12",
+    "World": 479
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Ourania Altar",
+    "IndexPosition": "07-13",
+    "World": 480
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Nex FFA",
+    "IndexPosition": "07-14",
+    "World": 481
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-15",
+    "World": 482
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "07-16",
+    "World": 483
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-17",
+    "World": 484
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-18",
+    "World": 485
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-19",
+    "World": 486
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Forestry",
+    "IndexPosition": "07-20",
+    "World": 487
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-21",
+    "World": 488
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-22",
+    "World": 489
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "07-23",
+    "World": 490
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Burthorpe Games Room",
+    "IndexPosition": "07-24",
+    "World": 491
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "08-01",
+    "World": 492
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Pyramid Plunder",
+    "IndexPosition": "08-02",
+    "World": 493
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "08-03",
+    "World": 494
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "08-04",
+    "World": 495
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "08-05",
+    "World": 496
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "Clan Recruitment",
+    "IndexPosition": "08-06",
+    "World": 497
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-07",
+    "World": 498
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-08",
+    "World": 499
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-09",
+    "World": 500
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-10",
+    "World": 501
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Speedrunning World",
+    "IndexPosition": "08-11",
+    "World": 502
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Nex FFA",
+    "IndexPosition": "08-12",
+    "World": 505
+  },
+  {
+    "Type": "PvP",
+    "Country": "United Kingdom",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "08-13",
+    "World": 506
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-14",
+    "World": 507
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Brimhaven Agility",
+    "IndexPosition": "08-15",
+    "World": 508
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-16",
+    "World": 509
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Forestry",
+    "IndexPosition": "08-17",
+    "World": 510
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "08-18",
+    "World": 511
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "House Party, Gilded Altar",
+    "IndexPosition": "08-19",
+    "World": 512
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Zeah Runecrafting",
+    "IndexPosition": "08-20",
+    "World": 513
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Nightmare of Ashihama",
+    "IndexPosition": "08-21",
+    "World": 514
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "08-22",
+    "World": 515
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Blast Furnace",
+    "IndexPosition": "08-23",
+    "World": 516
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Varlamore PvM",
+    "IndexPosition": "08-24",
+    "World": 517
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-01",
+    "World": 518
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-02",
+    "World": 519
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-03",
+    "World": 520
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-04",
+    "World": 521
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Guardians of the Rift",
+    "IndexPosition": "09-05",
+    "World": 522
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Nex FFA",
+    "IndexPosition": "09-06",
+    "World": 523
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-07",
+    "World": 524
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "-",
+    "IndexPosition": "09-08",
+    "World": 525
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "2200 skill total",
+    "IndexPosition": "09-09",
+    "World": 526
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "2000 skill total",
+    "IndexPosition": "09-10",
+    "World": 527
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "1500 skill total",
+    "IndexPosition": "09-11",
+    "World": 528
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "1250 skill total",
+    "IndexPosition": "09-12",
+    "World": 529
+  },
+  {
+    "Type": "Free",
+    "Country": "Australia",
+    "Activity": "750 skill total",
+    "IndexPosition": "09-13",
+    "World": 530
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Tombs of Amascut",
+    "IndexPosition": "09-14",
+    "World": 531
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Group PvM",
+    "IndexPosition": "09-15",
+    "World": 532
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "High Risk World",
+    "IndexPosition": "09-16",
+    "World": 533
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Guardians of the Rift",
+    "IndexPosition": "09-17",
+    "World": 534
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Soul Wars",
+    "IndexPosition": "09-18",
+    "World": 535
+  },
+  {
+    "Type": "Free",
+    "Country": "Australia",
+    "Activity": "-",
+    "IndexPosition": "09-19",
+    "World": 537
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP World",
+    "IndexPosition": "09-20",
+    "World": 539
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Speedrunning World",
+    "IndexPosition": "09-21",
+    "World": 540
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "09-22",
+    "World": 544
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "09-23",
+    "World": 545
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "09-24",
+    "World": 546
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "10-01",
+    "World": 547
+  },
+  {
+    "Type": "PvP",
+    "Country": "Germany",
+    "Activity": "PvP World - High Risk",
+    "IndexPosition": "10-02",
+    "World": 548
+  },
+  {
+    "Type": "Members",
+    "Country": "Germany",
+    "Activity": "Speedrunning World",
+    "IndexPosition": "10-03",
+    "World": 549
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "10-04",
+    "World": 552
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "10-05",
+    "World": 553
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "10-06",
+    "World": 554
+  },
+  {
+    "Type": "Free",
+    "Country": "Germany",
+    "Activity": "-",
+    "IndexPosition": "10-07",
+    "World": 555
+  },
+  {
+    "Type": "PvP",
+    "Country": "United Kingdom",
+    "Activity": "PvP Arena (UK)",
+    "IndexPosition": "10-08",
+    "World": 558
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "LMS Competitive",
+    "IndexPosition": "10-09",
+    "World": 559
+  },
+  {
+    "Type": "Free",
+    "Country": "United Kingdom",
+    "Activity": "Fresh Start",
+    "IndexPosition": "10-10",
+    "World": 565
+  },
+  {
+    "Type": "Members",
+    "Country": "United Kingdom",
+    "Activity": "Royal Titans",
+    "IndexPosition": "10-11",
+    "World": 567
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Speedrunning World",
+    "IndexPosition": "10-12",
+    "World": 568
+  },
+  {
+    "Type": "Members",
+    "Country": "Australia",
+    "Activity": "Bounty Hunter World",
+    "IndexPosition": "10-13",
+    "World": 569
+  },
+  {
+    "Type": "PvP",
+    "Country": "Australia",
+    "Activity": "PvP Arena (AUS)",
+    "IndexPosition": "10-14",
+    "World": 570
+  },
+  {
+    "Type": "PvP",
+    "Country": "Australia",
+    "Activity": "PvP Arena (Legacy Duels)",
+    "IndexPosition": "10-15",
+    "World": 571
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Royal Titans",
+    "IndexPosition": "10-16",
+    "World": 573
+  },
+  {
+    "Type": "Free",
+    "Country": "United States",
+    "Activity": "-",
+    "IndexPosition": "10-17",
+    "World": 575
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Speedrunning World",
+    "IndexPosition": "10-18",
+    "World": 576
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP World - Free",
+    "IndexPosition": "10-19",
+    "World": 577
+  },
+  {
+    "Type": "PvP",
+    "Country": "United States",
+    "Activity": "PvP Arena (US)",
+    "IndexPosition": "10-20",
+    "World": 578
+  },
+  {
+    "Type": "Members",
+    "Country": "United States",
+    "Activity": "Locked Developer World",
+    "IndexPosition": "10-21",
+    "World": 598
+  }
+]

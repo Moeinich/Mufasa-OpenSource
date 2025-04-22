@@ -1,0 +1,1 @@
+[{"id":679,"name":"Cave exit","type":0,"category":0,"actions":["Exit"],"coordinates":[[7758,32902]],"size":[1,1,240],"rotations":[0],"colors":[65536,5540258,4028048,4028048,65536,5540258]},{"id":677,"name":"Passage","type":10,"category":0,"actions":["Go-through","Peek"],"coordinates":[[7798,32898]],"size":[5,3,224],"rotations":[1],"colors":[7834257,7241862,6712428]}]

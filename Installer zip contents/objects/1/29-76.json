@@ -1,0 +1,1 @@
+[{"id":252,"name":"Ship's wheel","type":10,"category":0,"actions":[],"coordinates":[[3454,30954]],"size":[1,1,178],"rotations":[0],"colors":[6197685,10000803,4818605,9145493]},{"id":18843,"name":"Ladder","type":10,"category":0,"actions":["Climb-down"],"coordinates":[[3470,30950]],"size":[1,1,36],"rotations":[0],"colors":[4028272,7248018,5671297]}]

@@ -1,0 +1,1 @@
+[{"id":10858,"name":"Stairs","type":10,"category":0,"actions":["Climb-down"],"coordinates":[[8076,31648]],"size":[2,2,0],"rotations":[0],"colors":[15394272]},{"id":10851,"name":"Climbing rocks","type":4,"category":0,"actions":["Climb"],"coordinates":[[8080,31642],[8080,31638]],"size":[2,1,220],"rotations":[2,2],"colors":[16119287,8171465]}]

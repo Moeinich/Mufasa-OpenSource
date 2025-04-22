@@ -1,0 +1,1 @@
+[{"id":41927,"name":"Gate","type":0,"category":0,"actions":[],"coordinates":[[2214,11102]],"size":[1,1,254],"rotations":[0],"colors":[10000803,8684685,8158597,65536,9605787,9145493,10461097,7566202,7039858,6381927]},{"id":41925,"name":"Ladder","type":10,"category":0,"actions":["Climb-up"],"coordinates":[[2234,11118]],"size":[1,1,224],"rotations":[0],"colors":[4290715]}]

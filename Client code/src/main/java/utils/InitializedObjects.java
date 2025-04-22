@@ -1,0 +1,158 @@
+package utils;
+
+import UI.*;
+import UI.components.*;
+import UI.GraphUI;
+import UI.scripts.AnnotationControls;
+import helpers.CacheManager;
+import helpers.DiscordWebhook;
+import helpers.GetGameView;
+import helpers.Logger;
+import helpers.OCR.DigitReader;
+import helpers.OCR.ReadXP;
+import helpers.OCR.ReadLevels;
+import helpers.adb.ADBHandler;
+import helpers.Color.ColorFinder;
+import helpers.Color.TemplateMatcher;
+import helpers.cacheHandler.RSPreferenceUpdater;
+import helpers.emulator.DirectCapture;
+import helpers.emulator.EmulatorHelper;
+import helpers.emulator.EmulatorManager;
+import helpers.openCV.ImageRecognition;
+import helpers.scripts.ScriptCleanup;
+import helpers.scripts.ScriptInstanceLoader;
+import helpers.services.*;
+import helpers.services.utils.BreakServiceSettings;
+import helpers.services.utils.SleepServiceSettings;
+import helpers.testGrounds.ColorScanner;
+import helpers.utils.GameviewCache;
+import helpers.services.utils.AFKServiceSettings;
+import helpers.utils.IsScriptRunning;
+import osr.mapping.*;
+import osr.mapping.utils.*;
+import osr.utils.ImageUtils;
+import osr.walker.utils.TranslatePosition;
+import osr.walker.Walker;
+import osr.walker.utils.MapChunkHandler;
+import osr.walker.utils.MapIR;
+import scripts.*;
+import scripts.APIClasses.*;
+
+public class InitializedObjects {
+    public Logger logger;
+    public ADBHandler adbHandler;
+    public ScriptExecutor scriptExecutor;
+    public EmulatorHelper emulatorHelper;
+    public EmulatorManager emulatorManager;
+    public ScriptSelectionUI scriptSelectionUI;
+    public ClientUI clientUI;
+    public ColorFinder colorFinder;
+    public ScriptInstanceLoader scriptInstanceLoader;
+    public DevUI devUI;
+    public MainUI mainUI;
+    public BreakUI breakUI;
+    public HopUI hopUI;
+    public LogArea logArea;
+    public EmulatorView emulatorView;
+    public GetGameView getGameView;
+    public DiscordWebhook discordWebhook;
+    public ScriptInfo scriptInfo;
+    public ImageUtils imageUtils;
+    public GameviewCache gameviewCache;
+    public ScriptResourceManager scriptResourceManager;
+    public IsScriptRunning isScriptRunning;
+    public AccountManagerUI accountManagerUI;
+    public ScriptAccountManager scriptAccountManager;
+    public CredentialsManager credMgr;
+    public AFKServiceSettings AFKServiceSettings;
+    public BreakServiceSettings breakServiceSettings;
+    public SleepServiceSettings sleepServiceSettings;
+    public CacheManager cacheManager;
+    public ItemProcessor itemProcessor;
+    public PaintBar paintBar;
+    public MapUI mapUI;
+    public GrandExchange grandExchange;
+    public GraphUI graphUI;
+    public DirectCapture directCapture;
+    public MapChunkHandler mapChunkHandler;
+    public MM2MSProjection mm2MSProjection;
+    public ColorScanner colorScanner;
+    public AnnotationControls annotationControls;
+    public DigitReader digitReader;
+    public TemplateMatcher templateMatcher;
+    public GameOCR gameOCR;
+    public RSPreferenceUpdater rsPreferenceUpdater;
+
+    // Services
+    public RuntimeService runtimeService;
+    public BreakHandlerService breakHandlerService;
+    public AFKHandlerService afkHandlerService;
+    public SleepHandlerService sleepHandlerService;
+    public XPService xpService;
+    public LeveledupService leveledupService;
+    public MapIR mapIR;
+
+    //CV
+    public ImageRecognition imageRecognition;
+    //Tesseract
+    public ReadXP readxp;
+    public ReadLevels readlevels;
+
+    // Util classes for mapping
+    public Bank bank;
+    public DepositBox depositBox;
+    public Equipment equipment;
+    public GameTabs gameTabs;
+    public Inventory inventory;
+    public Login login;
+    public Logout logout;
+    public Magic magic;
+    public OverlayFinder overlayFinder;
+    public PlayerHelper playerHelper;
+    public GEHelper geHelper;
+    public Player player;
+    public Prayer prayer;
+    public Stats stats;
+    public Walker walker;
+    public XPBar xpBar;
+    public MinimapProjections minimapProjections;
+    public Minimap minimap;
+    public TranslatePosition translatePosition;
+    public Interfaces interfaces;
+    public Chatbox chatbox;
+    public Game game;
+    public Objects objects;
+    public WorldHopperUtils worldHopperUtils;
+    public FairyRings fairyRings;
+    public ScriptCleanup scriptCleanup;
+    public ScriptAPIHandler scriptAPIHandler;
+    public ScriptConfigurator scriptConfigurator;
+    public ScriptInitializer scriptInitializer;
+
+    //Mapping
+    public BankAPI bankAPI;
+    public ClientAPI clientAPI;
+    public ConditionAPI conditionAPI;
+    public DepositBoxAPI depositBoxAPI;
+    public EquipmentAPI equipmentAPI;
+    public GameAPI gameAPI;
+    public GameTabsAPI gameTabsAPI;
+    public InventoryAPI inventoryAPI;
+    public LoginAPI loginAPI;
+    public LogoutAPI logoutAPI;
+    public MagicAPI magicAPI;
+    public OverlayAPI overlayAPI;
+    public PlayerAPI playerAPI;
+    public PrayerAPI prayerAPI;
+    public StatsAPI statsAPI;
+    public WalkerAPI walkerAPI;
+    public XPBarAPI xpBarAPI;
+    public InterfacesAPI interfacesAPI;
+    public ChatboxAPI chatboxAPI;
+    public LoggerAPI loggerAPI;
+    public ObjectsAPI objectsAPI;
+    public PaintAPI paintAPI;
+    public GrandExchangeAPI grandExchangeAPI;
+    public OcrAPI ocrAPI;
+}
+

@@ -1,0 +1,1 @@
+[{"id":51584,"name":"Statue","type":10,"category":0,"actions":[],"coordinates":[[1654,12358],[1674,12358]],"size":[3,3,578],"rotations":[0,0],"colors":[5863311,7166286,7889495,9994350,5848365,13483185,65536]},{"id":51375,"name":"Entrance","type":10,"category":0,"actions":["Pass-through"],"coordinates":[[1664,12400]],"size":[2,2,128],"rotations":[0],"colors":[65536]}]

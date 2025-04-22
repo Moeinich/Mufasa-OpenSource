@@ -1,0 +1,1 @@
+[{"id":22665,"name":"Rocks","type":10,"category":0,"actions":[],"coordinates":[[6718,29474],[6734,29554]],"size":[1,1,240],"rotations":[0,0],"colors":[5988962,65536,5859147,5988955]},{"id":22600,"name":"Ladder","type":10,"category":0,"actions":["Climb-up"],"coordinates":[[6774,29466]],"size":[1,1,240],"rotations":[0],"colors":[65536,5988962,2976654]}]

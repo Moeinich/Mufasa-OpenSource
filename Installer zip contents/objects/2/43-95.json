@@ -1,0 +1,1 @@
+[{"id":3918,"name":"Elven lamp","type":10,"category":0,"actions":[],"coordinates":[[7002,25990],[7002,25946]],"size":[1,1,216],"rotations":[0,0],"colors":[15987441,16119027,8561589]},{"id":8746,"name":"ladder","type":10,"category":0,"actions":["Climb-down"],"coordinates":[[7010,25982],[7010,25954]],"size":[1,1,129],"rotations":[0,0],"colors":[8166573,5143957]}]

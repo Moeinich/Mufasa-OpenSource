@@ -1,0 +1,1 @@
+[{"id":3367,"name":"Prison Door","type":0,"category":0,"actions":[],"coordinates":[[5254,28770],[5254,28766]],"size":[1,1,240],"rotations":[0,0],"colors":[65536,8684685,11185077]},{"id":16679,"name":"Ladder","type":10,"category":553,"actions":["Climb-down"],"coordinates":[[5258,28770]],"size":[1,1,120],"rotations":[0],"colors":[5723997,4290715,2130612,4936448,16711422]}]

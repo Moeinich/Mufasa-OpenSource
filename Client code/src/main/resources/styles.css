@@ -1,0 +1,882 @@
+/* Defining looked-up colors on the .root style class */
+.root {
+    -primary-color: #e57c23;
+    -background-color: #0f0c0b;
+    -background-elevation-color: #1B1817;
+    -background-elevation2-color: #23201F;
+    -text-color: white;
+    -text-color-grey: #a5a3a2;
+    -text-color-black: #0f0c0b;
+    -button-bg-color: #e57c23;
+    -control-bg-color: #0f0c0b;
+    -tab-bg-color: #e57c23;
+    -border-color: #e57c23;
+    -fx-focus-color: transparent; /* this makes it so that the 'focus ring' is not showing anymore on components like a listview */
+    -fx-faint-focus-color: transparent; /* this makes it so that the 'focus ring' is not showing anymore on components like a listview */
+}
+
+/* Setting the background color for the entire scene and other components */
+.root, .vbox, .grid-pane, .text-area, .tab-pane .tab-content-area, .tab-pane .tab-header-background, .menu-bar {
+    -fx-background-color: -background-color; -fx-font-family: 'Consolas';
+}
+
+.category-list {
+    -fx-background-color: -background-elevation-color;
+}
+/* Scrollbar styling for both category-list and emulator-list-view */
+.category-list .scroll-bar,
+.emulator-list-view .scroll-bar {
+    -fx-background-color: -background-color; /* Background color for the scrollbar track */
+}
+
+.category-list .scroll-bar .thumb,
+.emulator-list-view .scroll-bar .thumb {
+    -fx-background-color: -primary-color; /* Color for the scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Scrollbar width adjustment */
+.category-list .scroll-bar:vertical,
+.emulator-list-view .scroll-bar:vertical {
+    -fx-pref-width: 8px; /* Width of the vertical scrollbar */
+}
+
+.category-list .scroll-bar:horizontal,
+.emulator-list-view .scroll-bar:horizontal {
+    -fx-pref-height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Up/down arrow button styling */
+.category-list .scroll-bar .increment-button,
+.category-list .scroll-bar .decrement-button,
+.emulator-list-view .scroll-bar .increment-button,
+.emulator-list-view .scroll-bar .decrement-button {
+    -fx-background-color: -background-color; /* Background color for the buttons */
+    -fx-background-radius: 5px; /* Rounded corners for the buttons */
+    -fx-padding: 2px; /* Padding around the arrow icon */
+}
+
+/* Hover effect for up/down buttons */
+.category-list .scroll-bar .increment-button:hover,
+.category-list .scroll-bar .decrement-button:hover,
+.emulator-list-view .scroll-bar .increment-button:hover,
+.emulator-list-view .scroll-bar .decrement-button:hover {
+    -fx-background-color: -background-color; /* Darker background color on hover */
+}
+
+.category-list .scroll-bar .increment-arrow:hover,
+.category-list .scroll-bar .decrement-arrow:hover,
+.emulator-list-view .scroll-bar .increment-arrow:hover,
+.emulator-list-view .scroll-bar .decrement-arrow:hover {
+    -fx-fill: -primary-color; /* Change arrow color on hover */
+}
+
+/* General list cell styling for both category and emulator list views */
+.category-list .list-cell,
+.emulator-list-view .list-cell {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 10pt;
+}
+
+/* Styling for list cells - selected, hover, and default colors */
+.category-list .list-cell:selected,
+.emulator-list-view .list-cell:selected {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: black;
+}
+
+.category-list .list-cell:hover,
+.emulator-list-view .list-cell:hover {
+    -fx-background-color: #2A2A2A;
+}
+
+.category-list .list-cell:even,
+.emulator-list-view .list-cell:even {
+    -fx-background-color: -background-elevation-color;
+}
+
+.category-list .list-cell:odd,
+.emulator-list-view .list-cell:odd {
+    -fx-background-color: derive(-background-elevation-color, -10%);
+}
+
+.category-list .list-cell:hover,
+.emulator-list-view .list-cell:hover {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: white; /* Ensure text color remains white on hover */
+}
+
+/* Ensure selected color persists even when ListView is unfocused */
+.category-list .list-cell:selected,
+.emulator-list-view .list-cell:selected {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: black; /* Ensure text color is white */
+}
+
+.category-list .list-cell:selected:focused,
+.emulator-list-view .list-cell:selected:focused {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: black;
+}
+
+.category-list .list-cell:selected:unfocused,
+.emulator-list-view .list-cell:selected:unfocused {
+    -fx-background-color: -primary-color; /* Persist background color */
+    -fx-text-fill: black; /* Ensure text remains visible */
+}
+
+/* Scrollbar styling for TextArea components */
+.text-area .scroll-bar {
+    -fx-background-color: -background-color; /* Background color for the scrollbar track */
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-background-color: -primary-color; /* Color for the scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Scrollbar width adjustment */
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 8px; /* Width of the vertical scrollbar */
+}
+
+.text-area .scroll-bar:horizontal {
+    -fx-pref-height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Up/down arrow button styling */
+.text-area .scroll-bar .increment-button,
+.text-area .scroll-bar .decrement-button {
+    -fx-background-color: -background-color; /* Background color for the buttons */
+    -fx-background-radius: 5px; /* Rounded corners for the buttons */
+    -fx-padding: 2px; /* Padding around the arrow icon */
+}
+
+/* Hover effect for up/down buttons */
+.text-area .scroll-bar .increment-button:hover,
+.text-area .scroll-bar .decrement-button:hover {
+    -fx-background-color: -background-color; /* Darker background color on hover */
+}
+
+.text-area .scroll-bar .increment-arrow:hover,
+.text-area .scroll-bar .decrement-arrow:hover {
+    -fx-fill: -primary-color; /* Change arrow color on hover */
+}
+
+/* Scrollbar styling for custom scroll pane */
+.custom-scroll-pane .scroll-bar {
+    -fx-background-color: -background-color;
+}
+
+.custom-scroll-pane .scroll-bar .thumb {
+    -fx-background-color: -primary-color;
+    -fx-background-radius: 5px;
+}
+
+.custom-scroll-pane .scroll-bar:vertical {
+    -fx-pref-width: 8px;
+}
+
+.custom-scroll-pane .scroll-bar:horizontal {
+    -fx-pref-height: 8px;
+}
+
+.custom-scroll-pane .scroll-bar .increment-button,
+.custom-scroll-pane .scroll-bar .decrement-button {
+    -fx-background-color: -background-color;
+    -fx-background-radius: 5px;
+    -fx-padding: 2px;
+}
+
+.custom-scroll-pane .scroll-bar .increment-button:hover,
+.custom-scroll-pane .scroll-bar .decrement-button:hover {
+    -fx-background-color: -background-color;
+}
+
+.custom-scroll-pane .scroll-bar .increment-arrow:hover,
+.custom-scroll-pane .scroll-bar .decrement-arrow:hover {
+    -fx-fill: -primary-color;
+}
+
+/* LABELS */
+.label {
+    -fx-text-fill: -text-color;
+}
+.label-black {
+    -fx-text-fill: -text-color-black;
+}
+.label-grey {
+    -fx-text-fill: -text-color-grey;
+}
+
+/* HYPERLINKS */
+.hyperlink {
+    -fx-text-fill: white;
+    -fx-padding: 0px;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: -primary-color;
+}
+
+/* BUTTONS */
+.button {
+    -fx-background-color: -button-bg-color;
+    -fx-text-fill: -text-color-black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.button:disabled {
+    -fx-background-color: white; /* Set disabled button background to white */
+    -fx-text-fill: gray; /* Change text color to indicate it's disabled */
+}
+
+.toggle-button {
+    -fx-background-color: -button-bg-color;
+    -fx-text-fill: -text-color-black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* CONTROLS */
+.text-field, .spinner {
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: -text-color;
+}
+
+/* LIST VIEW */
+.list-view {
+    -fx-background-color: -background-color;
+    -fx-text-fill: -text-color;
+    -fx-border-width: 1px; /* Make sure sizes have 'px' */
+    -fx-padding: 0; /* This is fine as '0' is a valid size */
+}
+
+/* PROGRESS BAR */
+.progress-bar .bar {
+    -fx-background-color: -primary-color;
+}
+
+.slider {
+    -fx-base: white; /* primary color */
+}
+
+.slider .track {
+    -fx-background-color: white; /* track color */
+}
+
+.slider .thumb {
+    -fx-background-color: #e57c23; /* thumb color */
+    -fx-background-radius: 100px; /* Make it round */
+}
+
+/* HEADERS */
+.header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px; /* 'px' is included in the variable value */
+    -fx-text-fill: -primary-color;
+    -fx-padding: 3px 0 0 0px; /* 'px' is needed for padding values */
+}
+.subheader-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px; /* 'px' is included in the variable value */
+    -fx-text-fill: -primary-color;
+    -fx-padding: 2px 0 0 0px; /* 'px' is needed for padding values */
+}
+.h3 {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px; /* 'px' is included in the variable value */
+    -fx-text-fill: -primary-color;
+    -fx-padding: 2px 0 0 0px; /* 'px' is needed for padding values */
+}
+
+/* TEXT AREA */
+.text-area .content {
+    -fx-text-fill: -text-color;
+}
+.text-area:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* TAB BAR STYLING */
+.tab-pane .tab-header-area .tab .text {
+    -fx-fill: -text-color-black;
+}
+.tab-pane .tab-header-area .tab {
+    -fx-background-color: -tab-bg-color;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.tab-pane .tab-header-area .tab:hover {
+    -fx-background-color: #c46a1d;
+}
+.tab-pane .tab-header-area .tab:hover .text {
+    -fx-fill: -text-color-black;
+    -fx-font-weight: bold;
+}
+.tab-pane .tab-header-area .tab:selected {
+    -fx-background-color: #c46a1d;
+}
+.tab-pane .tab-header-area .tab:selected .text {
+    -fx-fill: black;
+    -fx-font-weight: bold;
+}
+.tab-pane .tab-header-area .tab:focused {
+    -fx-background-color: #c46a1d;
+}
+.tab-pane .tab-header-area .tab:focused .text {
+    -fx-fill: -text-color-black;
+    -fx-font-weight: bold;
+}
+/* MENU STYLING */
+.menu-bar {
+    -fx-padding: 10px;
+}
+.menu .label {
+    -fx-text-fill: -text-color;
+}
+/* Styling for sub-menus and menu items within */
+.context-menu {
+    -fx-background-color: -background-color;
+}
+.menu-item .label {
+    -fx-text-fill: -text-color;
+}
+/* Hover effect for sub-menu items */
+.menu-item:hover {
+    -fx-background-color: -primary-color;
+}
+.menu-item:hover .label {
+    -fx-text-fill: black;
+}
+/* Hover effect for the top menu headers */
+.menu-bar .menu:hover {
+    -fx-background-color: -primary-color;
+}
+.menu-bar .menu:hover > .label {
+    -fx-text-fill: black;
+}
+/* Explicitly style the non-hover state for selected sub-menu items */
+.menu-item:selected {
+    -fx-background-color: -primary-color;
+}
+.menu-item:selected .label {
+    -fx-text-fill: black;
+}
+.menu-item:focused {
+    -fx-selection-bar: -primary-color;
+}
+.menu-item:focused .label {
+    -fx-text-fill: black;
+}
+/* Explicitly style the non-hover state for top menu headers */
+.menu:showing {
+    -fx-background-color: -primary-color;
+}
+.menu:showing > .label {
+    -fx-text-fill: black;
+}
+.menu-bar:focused .menu {
+    -fx-background-color: -primary-color;
+}
+.menu-bar:focused .menu > .label {
+    -fx-text-fill: black;
+}
+
+.check-box {
+    -fx-text-fill: white;
+}
+.check-box .box {
+    -fx-background-color: lightgrey;
+    -fx-border-color: grey;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+}
+.check-box:selected .box {
+    -fx-background-color: -primary-color;
+    -fx-border-color: -primary-color;
+}
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.text-area {
+    -fx-control-inner-background: -background-elevation-color;
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: #a5a3a2;
+    -fx-highlight-fill: -primary-color;
+    -fx-highlight-text-fill: black;
+    -fx-hbar-policy: never;
+    -fx-text-overrun: ellipsis;
+    -fx-content-display: top;
+    -fx-prompt-text-fill: grey;
+}
+.text-area .content {
+    -fx-background-radius: 0 ;
+}
+
+.list-cell:selected {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: black;
+}
+
+.list-view:focused .list-cell:filled:selected {
+    -fx-background-color: -primary-color;
+    -fx-text-fill: black;
+}
+
+.list-cell:even {
+    -fx-background-color: #23272A;
+    -fx-text-fill: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: #2C313C;
+    -fx-text-fill: white;
+}
+
+.export-button-box {
+    -fx-padding: 0 0 10 0;
+}
+.column1-InfoUI {
+    -fx-padding: 0 0 0 3;
+}
+
+.emulator-list-view, .log-list-view {
+    -fx-background-radius: 3px;
+    -fx-border-radius: 10px 10px 10px 10px;
+    -fx-border-width: 1px 1px 0 1px;
+    -fx-border-color: -background-elevation-color;
+    -fx-background-color: -background-elevation-color;
+    -fx-control-inner-background: -background-elevation-color;
+    -fx-focus-color: -primary-color;
+    -fx-faint-focus-color: -primary-color;
+}
+
+.emulator-list-view .list-cell, .log-list-view .list-cell {
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 10pt;
+}
+
+.emulator-list-view .list-cell:even {
+    -fx-background-color: -background-elevation-color;
+}
+
+.emulator-list-view .list-cell:odd {
+    -fx-background-color: -background-elevation-color;
+}
+
+.devui-logarea-box {
+    -fx-min-width: 1020px;
+    -fx-pref-width: 1020px;
+    -fx-alignment: center-left;
+    -fx-min-height: 120px;
+}
+
+.minimap-view {
+    -fx-border-color: #e57c23; /* Yellow-ish color */
+    -fx-border-width: 2;
+    -fx-padding: 5;
+}
+
+.elevation-1 {
+    -fx-background-color: -background-elevation-color;
+    -fx-background-radius: 10;
+}
+.rounded-text-field {
+    -fx-background-color: -control-bg-color;
+    -fx-text-fill: -text-color;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+.main-layout {
+    -fx-background-color: -control-bg-color;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.main-text-field {
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: -text-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.dropdown {
+    -fx-background-color: -background-color;
+    -fx-text-fill: -text-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.button {
+    -fx-background-color: -button-bg-color;
+    -fx-text-fill: -text-color-black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.main-dropdown {
+    -fx-background-color: -background-elevation-color; /* Same color as the text fields */
+    -fx-text-fill: -text-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.main-dropdown .arrow-button {
+    -fx-background-color: -button-bg-color; /* Orange color for the dropdown button */
+}
+
+.main-dropdown .list-cell {
+    -fx-background-color: -background-elevation-color; /* Background color for dropdown entries */
+    -fx-text-fill: -text-color;
+}
+
+.main-dropdown .list-cell:odd {
+    -fx-background-color: derive(-background-elevation-color, 10%); /* Slightly lighter color for alternating entries */
+}
+
+.main-dropdown .list-cell:even {
+    -fx-background-color: derive(-background-elevation-color, -10%); /* Slightly darker color for alternating entries */
+}
+
+.main-dropdown .list-cell:hover {
+    -fx-background-color: -primary-color; /* Highlight color for hovered entries */
+    -fx-text-fill: black;
+}
+.list-cell {
+    -fx-text-fill: white; /* Default text color */
+}
+.list-cell:even {
+    -fx-background-color: -background-elevation-color; /* Light color */
+}
+
+.list-cell:odd {
+    -fx-background-color: derive(-background-elevation-color, -10%); /* Darker color */
+}
+.list-cell:hover {
+    -fx-background-color: -primary-color; /* Highlight color for hovered entries */
+    -fx-text-fill: black; /* Text color when hovered */
+}
+
+.text-white {
+    -fx-fill: -text-color;
+}
+
+/* PaintBar specific styles */
+.paintBar-root {
+    -fx-background-color: -background-elevation-color;
+    -fx-padding: 10px;
+}
+
+.paintBar-logo {
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+.paintBar-header-label {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 0;
+    -fx-text-alignment: center; /* Center the text */
+}
+
+.paintBar-subheader-label {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold; /* Make it a subheader */
+    -fx-padding: 2px 0; /* Reduced padding */
+    -fx-alignment: center; /* Center align the label */
+}
+
+.paintBar-box-integer {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 12px;
+    -fx-padding: 2px 0; /* Reduced padding */
+    -fx-alignment: center; /* Center align the integer */
+}
+
+.paintBar-bottom-label {
+    -fx-text-fill: -text-color;
+    -fx-font-size: 14px;
+    -fx-padding: 2px 0; /* Reduced padding */
+    -fx-alignment: center-left; /* Align to the left */
+}
+
+/* Default text color for the button area in searchable-combo-box */
+.searchable-combo-box .combo-box .button .text {
+    -fx-text-fill: white;
+}
+
+/* Default text color for the button area in combo-box-filtered */
+.combo-box-filtered .combo-box .button .text {
+    -fx-text-fill: white;
+}
+
+/* Prompt text color for searchable-combo-box */
+.searchable-combo-box .combo-box .button .text:empty {
+    -fx-text-fill: white; /* Ensures prompt text is white */
+}
+
+/* Prompt text color for combo-box-filtered */
+.combo-box-filtered .combo-box .button .text:empty {
+    -fx-text-fill: white;
+}
+
+/* Default text color for list cells in searchable-combo-box */
+.searchable-combo-box .combo-box-popup .list-view .list-cell {
+    -fx-text-fill: white; /* Sets default text color to white */
+}
+
+/* Default text color for list cells in combo-box-filtered */
+.combo-box-filtered .combo-box-popup .list-view .list-cell {
+    -fx-text-fill: white;
+}
+
+/* Default styling for searchable-combo-box and combo-box-filtered */
+.searchable-combo-box, .combo-box-filtered {
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: -text-color;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* Dropdown arrow button */
+.searchable-combo-box .arrow-button,
+.combo-box-filtered .arrow-button {
+    -fx-background-color: -button-bg-color; /* Orange color for the dropdown button */
+}
+
+.searchable-combo-box .combo-box {
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Selected list items with white text and primary color background */
+.searchable-combo-box .combo-box-popup .list-view .list-cell:selected,
+.combo-box-filtered .combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: -primary-color; /* Primary color background */
+    -fx-text-fill: white;                /* White text */
+}
+
+/* Hovered list items with white text and primary color background */
+.searchable-combo-box .combo-box-popup .list-view .list-cell:hover,
+.combo-box-filtered .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: -primary-color; /* Primary color background on hover */
+    -fx-text-fill: white;                /* White text on hover */
+}
+
+/* Focused selected list items */
+.searchable-combo-box .combo-box-popup .list-view .list-cell:selected:focused,
+.combo-box-filtered .combo-box-popup .list-view .list-cell:selected:focused {
+    -fx-background-color: -primary-color; /* Maintain primary color background */
+    -fx-text-fill: white;                /* Maintain white text */
+}
+
+/* Unfocused selected list items */
+.searchable-combo-box .combo-box-popup .list-view .list-cell:selected:unfocused,
+.combo-box-filtered .combo-box-popup .list-view .list-cell:selected:unfocused {
+    -fx-background-color: -primary-color; /* Maintain primary color background */
+    -fx-text-fill: white;                /* Maintain white text */
+}
+
+/* Scrollbar Track */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar {
+    -fx-background-color: -background-color; /* Background color for the scrollbar track */
+}
+
+/* Scrollbar Thumb */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .thumb,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .thumb {
+    -fx-background-color: -primary-color; /* Color for the scrollbar thumb */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Scrollbar Width (Vertical) */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar:vertical,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar:vertical {
+    -fx-pref-width: 8px; /* Width of the vertical scrollbar */
+}
+
+/* Scrollbar Height (Horizontal) */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar:horizontal,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar:horizontal {
+    -fx-pref-height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar Increment and Decrement Buttons */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .increment-button,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .increment-button,
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .decrement-button,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .decrement-button {
+    -fx-background-color: -background-color; /* Background color for the buttons */
+    -fx-background-radius: 5px; /* Rounded corners for the buttons */
+    -fx-padding: 2px; /* Padding around the arrow icon */
+}
+
+/* Scrollbar Increment and Decrement Buttons Hover State */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .increment-button:hover,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .increment-button:hover,
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .decrement-button:hover,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .decrement-button:hover {
+    -fx-background-color: -background-color; /* Maintain background color on hover */
+}
+
+/* Scrollbar Increment and Decrement Arrows Hover State */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .increment-arrow:hover,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .increment-arrow:hover,
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar .decrement-arrow:hover,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar .decrement-arrow:hover {
+    -fx-fill: -primary-color; /* Change arrow color on hover */
+}
+
+/* Optional: Adjusting Scrollbar Opacity for Better Visibility */
+.searchable-combo-box .combo-box-popup .list-view .scroll-bar,
+.combo-box-filtered .combo-box-popup .list-view .scroll-bar {
+    -fx-opacity: 1; /* Ensure scrollbars are fully visible */
+}
+
+.devUITab-button {
+    -fx-background-color: -background-elevation2-color; /* Light background color */
+    -fx-text-fill: -text-color;
+    -fx-margin: 5px 0px 0px 0px;
+    -fx-min-width: 225px; /* Minimum width for buttons to ensure alignment */
+    -fx-alignment: CENTER; /* Center text inside buttons */
+    -fx-border-radius: 5px;
+}
+
+.devUITab-spinner .text-field {
+    -fx-background-color: -background-elevation2-color; /* Light background color */
+    -fx-border-color: #cccccc; /* Light border color */
+    -fx-text-fill: -text-color;
+}
+
+.devUITab-textfield {
+    -fx-background-color: -background-elevation2-color; /* Light background color */
+    -fx-border-color: #cccccc; /* Light border color */
+    -fx-text-fill: -text-color;
+}
+
+.devUITab-dropdown {
+    -fx-background-color: -background-elevation2-color; /* Light background color */
+    -fx-border-color: #cccccc; /* Light border color */
+    -fx-text-fill: -text-color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+.devUITab-dropdown .list-cell:odd {
+    -fx-background-color: -background-elevation-color; /* Light background color for odd cells */
+}
+
+.devUITab-dropdown .list-cell:even {
+    -fx-background-color: -background-elevation2-color; /* Darker background color for even cells */
+}
+
+.devUITab-dropdown .list-cell:selected {
+    -fx-background-color: -background-elevation2-color; /* Background color for selected item */
+    -fx-text-fill: -text-color; /* Text color for selected item */
+}
+
+.devUITab-dropdown .list-cell:hover {
+    -fx-background-color: -primary-color; /* Background color for hovered item */
+    -fx-text-fill: -text-color-black; /* Text color for hovered item */
+}
+
+.devUITab-dropdown .arrow {
+    -fx-background-color: -background-elevation2-color; /* Light background color for arrow */
+    -fx-border-color: #cccccc; /* Light border color */
+}
+
+.devUITab-dropdown .combo-box-popup .list-view {
+    -fx-background-color: -background-elevation2-color; /* Light background color for the list */
+}
+
+.devUITab-dropdown .combo-box-base {
+    -fx-background-color: -background-elevation2-color; /* Light background color for the box itself */
+    -fx-border-color: #cccccc; /* Light border color */
+    -fx-text-fill: -text-color; /* Text color for the box itself */
+}
+
+
+/** LOG AREA STYLES **/
+.logareabox .scroll-bar:vertical {
+    -fx-pref-width: 1;
+    -fx-opacity: 0;
+}
+.logareabox .scroll-bar:horizontal {
+    -fx-pref-height: 1;
+    -fx-opacity: 0;
+}
+
+.logareabox {
+    -fx-control-inner-background: -background-elevation-color;
+    -fx-background-color: -background-elevation-color;
+    -fx-text-fill: #a5a3a2;
+    -fx-highlight-fill: -primary-color;
+    -fx-highlight-text-fill: black;
+    -fx-hbar-policy: never;
+    -fx-text-overrun: ellipsis;
+    -fx-content-display: top;
+}
+.logareabox .content {
+    -fx-background-radius: 0;
+}
+.logareabox .text-area .prompt-text {
+    -fx-fill: derive(-background-elevation-color, -30%);
+    -fx-font-style: italic;
+}
+
+/* RichTextFX styling */
+.debug {
+    -fx-fill: #90f1ef;
+    -fx-font-weight: bold;
+}
+.info {
+    -fx-fill: #aaf683;
+    -fx-font-weight: bold;
+}
+.warning {
+    -fx-fill: #ffd97d;
+    -fx-font-weight: bold;
+}
+.error {
+    -fx-fill: #ee6055;
+    -fx-font-weight: bold;
+}
+.dev {
+    -fx-fill: #f991cc;
+    -fx-font-weight: bold;
+}
+.timestamp {
+    -fx-fill: #f9f9f9;
+}
+.default-text {
+    -fx-fill: #f9f9f9;
+}
+
+/* keyword styles */
+.successKW {
+    -fx-fill: #aaf683;
+}
+
+.errorKW {
+    -fx-fill: red;
+}
+
+.resultKW {
+    -fx-fill: #f991cc;
+}
