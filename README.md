@@ -25,6 +25,7 @@ Obviously, thank you to everyone that has contributed one way or another to our 
 **Mezza**: For being part of the initial Staff team, helping on making decisions and starting off writing some scripts!<br/>
 **Kongen**: For being our first community member as 'Official Script Developer' and writing multiple scripts<br/>
 **SkillerKido**: For being our second community developer, writing multiple scripts<br/>
+**Gilz**: For being our first support team member, actively supporting our subscribers when needed, giving valuable input with a different bot perspective.<br/>
 **Torwent**: For teaching us with knowledge obtained from the Simba/Wasp community, specifically helping us in getting a more robust and accurate walker and the multiple sparring sessions all around<br/>
 **BigAussie**: We all need an aussie to support us don't we? Ya silly lurker.<br/>
 **OSMB**: Inspiring us to create our own client from scratch after multiple years of using OSMB/being staff or support at OSMB.<br/>
