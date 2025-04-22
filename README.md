@@ -20,11 +20,11 @@ The client no longer has any auth checks or instance limit<br/>
 
 # CREDITS
 Obviously, thank you to everyone that has contributed one way or another to our project over the past years, but specifically some people below:<br/>
-**Moenich**: For the idea of starting this project together, struggling and learning as we go. From building shitty swing GUI's to fully rewriting the client two times. We achieved what we set to do. 
-**Detain**: For being part of the initial Staff team, helping us with some of the Discord set up, hooking us up in the early months! 
-**Mezza**: For being part of the initial Staff team, helping on making decisions and starting off writing some scripts!
-**Kongen**: For being our first community member as 'Official Script Developer' and writing multiple scripts
-**SkillerKido**: For being our second community developer, writing multiple scripts
-**Torwent**: For teaching us with knowledge obtained from the Simba/Wasp community, specifically helping us in getting a more robust and accurate walker and the multiple sparring sessions all around
-**BigAussie**: We all need an aussie to support us don't we? Ya silly lurker.
-**OSMB**: Inspiring us to create our own client from scratch after multiple years of using OSMB/being staff or support at OSMB.
+**Moenich**: For the idea of starting this project together, struggling and learning as we go. From building shitty swing GUI's to fully rewriting the client two times. We achieved what we set to do. <br/>
+**Detain**: For being part of the initial Staff team, helping us with some of the Discord set up, hooking us up in the early months! <br/>
+**Mezza**: For being part of the initial Staff team, helping on making decisions and starting off writing some scripts!<br/>
+**Kongen**: For being our first community member as 'Official Script Developer' and writing multiple scripts<br/>
+**SkillerKido**: For being our second community developer, writing multiple scripts<br/>
+**Torwent**: For teaching us with knowledge obtained from the Simba/Wasp community, specifically helping us in getting a more robust and accurate walker and the multiple sparring sessions all around<br/>
+**BigAussie**: We all need an aussie to support us don't we? Ya silly lurker.<br/>
+**OSMB**: Inspiring us to create our own client from scratch after multiple years of using OSMB/being staff or support at OSMB.<br/>
