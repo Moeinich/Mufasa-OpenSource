@@ -1,0 +1,89 @@
+repositories {
+    mavenCentral()
+    maven { url "https://repo1.maven.org/maven2" }
+    maven { url "https://openpnp.github.io/maven" }
+    maven { url 'https://jitpack.io' }
+    google()
+}
+
+buildscript {
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.4.1'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.10'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+    id 'application'
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        cacheChangingModulesFor 0, 'seconds'
+    }
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:33.3.1-jre'
+    implementation 'org.openjfx:javafx-controls:19'
+    implementation 'org.openjfx:javafx-swing:19'
+    implementation 'org.openpnp:opencv:4.9.0-0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'org.reflections:reflections:0.10.2'
+    implementation 'org.json:json:20231013'
+    implementation 'net.sourceforge.tess4j:tess4j:5.13.0'
+    implementation 'org.slf4j:slf4j-nop:2.0.9' //Remove the SLF4J Provider not found shit. the "nop" just logging messages.
+    implementation 'org.jsoup:jsoup:1.17.2'
+    implementation group: 'org.jspecify', name: 'jspecify', version: '0.3.0'
+    implementation 'net.java.dev.jna:jna:5.9.0'
+    implementation 'net.java.dev.jna:jna-platform:5.9.0'
+    implementation 'org.controlsfx:controlsfx:11.2.0'
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.1.6'
+    implementation 'org.fxmisc.richtext:richtextfx:0.11.4'
+
+    implementation 'com.github.Mufasa-SDK:SDKRepo:1.2.111'
+    // Material FX
+    //implementation 'io.github.palexdev:materialfx:11.16.1'
+}
+
+javafx {
+    version = "19"
+    modules = [ 'javafx.controls', 'javafx.swing']
+}
+
+mainClassName = 'Mufasa'
+
+shadowJar {
+    archiveFileName = 'Mufasa.jar'
+    destinationDirectory = file('../ClientJar/')
+    manifest {
+        attributes(
+                'Manifest-Version': '1.0',
+                'Created-By': 'Mufasa'
+        )
+    }
+    finalizedBy 'copyJarToDev'
+}
+
+tasks.register('copyJarToDev') {
+    dependsOn shadowJar
+    doLast {
+        def outputDir = file('../ClientJar/')
+        def originalFile = new File(outputDir, 'Mufasa.jar')
+        def copyFile = new File(outputDir, 'Mufasa_dev.jar')
+
+        if (originalFile.exists()) {
+            copy {
+                from originalFile
+                into outputDir
+                rename { 'Mufasa_dev.jar' }
+            }
+            println "Copied Mufasa.jar to Mufasa_dev.jar"
+        } else {
+            throw new GradleException("Mufasa.jar not found!")
+        }
+    }
+}
