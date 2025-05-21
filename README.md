@@ -5,7 +5,8 @@ Mufasa was open sourced on the 22nd of April 2025. Forked from JustDavyy to also
 **Client code**: Contains the entire source code of the client in full<br/>
 **dependencies**: Contains the dependencies required by the client (basically unzips the zip archive to %localappdata%\MufasaOpenSource for windows or /Users/<user>/.Mufasa for MacOS<br/>
 # REQUIREMENTS<br/>
-BellSoft JDK 11, which can be downloaded here: **https://download.bell-sw.com/java/11.0.22+12/bellsoft-jdk11.0.22+12-windows-amd64-full.msi**<br/>
+BellSoft JDK 11, which can be downloaded here for windows: **https://download.bell-sw.com/java/11.0.22+12/bellsoft-jdk11.0.22+12-windows-amd64-full.msi**<br/>
+or here for MacOS: **https://mega.nz/file/dHBmTZCS#e6dNgL3gTfWtZ0gsxlbiPtrC7XMbMTcBn9_pidKuIfY**<br/>
 <br/>
 The client ships with all the scripts that were active/working once it stopped being developed.<br/>
 The client no longer has any auth checks or instance limit<br/>
