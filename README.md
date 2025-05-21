@@ -1,4 +1,4 @@
-Mufasa was open sourced by JustDavyy on the 22nd of April 2025.
+Mufasa was open sourced on the 22nd of April 2025. Forked from JustDavyy to also showcase it on my profile.
 
 # SUMMARY
 
