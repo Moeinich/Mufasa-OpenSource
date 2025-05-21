@@ -6,12 +6,6 @@ repositories {
     google()
 }
 
-buildscript {
-    dependencies {
-        classpath 'com.guardsquare:proguard-gradle:7.4.1'
-    }
-}
-
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
@@ -45,9 +39,7 @@ dependencies {
     implementation 'org.fxmisc.richtext:richtextfx:0.11.4'
 
     implementation 'com.github.Mufasa-SDK:SDKRepo:1.2.111'
-    // Material FX
-    //implementation 'io.github.palexdev:materialfx:11.16.1'
-}
+    }
 
 javafx {
     version = "19"
