@@ -1,17 +1,17 @@
-repositories {
-    mavenCentral()
-    maven { url "https://repo1.maven.org/maven2" }
-    maven { url "https://openpnp.github.io/maven" }
-    maven { url 'https://jitpack.io' }
-    google()
-}
-
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
     id 'org.openjfx.javafxplugin' version '0.1.0'
     id 'com.github.johnrengelman.shadow' version '7.1.0'
     id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo1.maven.org/maven2" }
+    maven { url "https://openpnp.github.io/maven" }
+    maven { url 'https://jitpack.io' }
+    google()
 }
 
 configurations.configureEach {
@@ -46,7 +46,9 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.swing']
 }
 
-mainClassName = 'Mufasa'
+application {
+    mainClass = 'Mufasa'
+}
 
 shadowJar {
     archiveFileName = 'Mufasa.jar'

@@ -1,4 +1,9 @@
 /.idea
 /.gradle
 /.vscode
+/build
+/gradle
+gradlew
+gradlew.bat
+
 
