@@ -52,7 +52,7 @@ application {
 
 shadowJar {
     archiveFileName = 'Mufasa.jar'
-    destinationDirectory = file('../ClientJar/')
+    destinationDirectory = file('/ClientJar/')
     manifest {
         attributes(
                 'Manifest-Version': '1.0',
@@ -65,7 +65,7 @@ shadowJar {
 tasks.register('copyJarToDev') {
     dependsOn shadowJar
     doLast {
-        def outputDir = file('../ClientJar/')
+        def outputDir = file('/ClientJar/')
         def originalFile = new File(outputDir, 'Mufasa.jar')
         def copyFile = new File(outputDir, 'Mufasa_dev.jar')
 
