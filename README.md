@@ -12,8 +12,6 @@ The client ships with all the scripts that were active/working once it stopped b
 The client no longer has any auth checks or instance limit<br/>
 ## Links
 **Client code direct link**: https://github.com/Moeinich/Mufasa-OpenSource/tree/main/Client%20code/src/main/java<br/>
-**Installer zip contents direct link:** https://github.com/Moeinich/Mufasa-OpenSource/tree/main/Installer%20zip%20contents<br/>
-**Installer source code direct link:** https://github.com/Moeinich/Mufasa-OpenSource/tree/main/Installer<br/>
 **Script repository of JustDavyy:** https://github.com/JustDavyy/Mufasa-Scripts<br/>
 **Script repository of Moeinich:** https://github.com/Moeinich/Public-Scripts<br/>
 **Mufasa SDK Repository direct link:** https://github.com/Mufasa-SDK/SDKRepo<br/>
