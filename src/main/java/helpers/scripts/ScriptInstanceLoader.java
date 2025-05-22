@@ -2,15 +2,17 @@ package helpers.scripts;
 
 import helpers.ScriptCategory;
 import helpers.ScriptMetadata;
+import helpers.annotations.ScriptManifest;
 import helpers.scripts.utils.Script;
 import helpers.scripts.utils.MetadataDTO;
 import utils.SystemUtils;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.util.*;
 import java.util.jar.JarEntry;
+import java.util.jar.JarFile;
 import java.util.jar.JarInputStream;
 
 public class ScriptInstanceLoader {
@@ -28,24 +30,57 @@ public class ScriptInstanceLoader {
         File localScriptsDir = new File(SystemUtils.getLocalScriptFolderPath());
         File[] jarFiles = localScriptsDir.listFiles((dir, name) -> name.endsWith(".jar"));
 
-        // Initialize the list before use
         cachedScriptsDTO = new ArrayList<>();
 
         if (jarFiles != null) {
             for (File jarFile : jarFiles) {
-                ScriptMetadata scriptMetadata = new ScriptMetadata(
-                        jarFile.getName(),
-                        "local",
-                        "local",
-                        "",
-                        Collections.singletonList(ScriptCategory.Local)
-                );
-                MetadataDTO scriptDTO = new MetadataDTO(scriptMetadata, jarFile.getAbsolutePath(), "local");
-
-                cachedScriptsDTO.add(scriptDTO);
+                try {
+                    ScriptMetadata metadata = extractMetadataFromJar(jarFile);
+                    if (metadata != null) {
+                        MetadataDTO scriptDTO = new MetadataDTO(metadata, jarFile.getAbsolutePath(), "local");
+                        cachedScriptsDTO.add(scriptDTO);
+                    }
+                } catch (Exception e) {
+                    System.err.println("Failed to load metadata from: " + jarFile.getName());
+                    e.printStackTrace();
+                }
             }
         }
     }
+
+    private ScriptMetadata extractMetadataFromJar(File jarFile) throws IOException {
+        try (JarFile jar = new JarFile(jarFile)) {
+            Enumeration<JarEntry> entries = jar.entries();
+            URL[] urls = { new URL("jar:file:" + jarFile.getAbsolutePath() + "!/") };
+            try (URLClassLoader cl = new URLClassLoader(urls, getClass().getClassLoader())) {
+                while (entries.hasMoreElements()) {
+                    JarEntry entry = entries.nextElement();
+                    String name = entry.getName();
+                    if (name.endsWith(".class")) {
+                        String className = name.replace('/', '.').substring(0, name.length() - 6);
+
+                        try {
+                            Class<?> clazz = cl.loadClass(className);
+                            if (clazz.isAnnotationPresent(ScriptManifest.class)) {
+                                ScriptManifest manifest = clazz.getAnnotation(ScriptManifest.class);
+                                return new ScriptMetadata(
+                                        manifest.name(),
+                                        manifest.description(),
+                                        manifest.version(),
+                                        null,
+                                        Arrays.asList(manifest.categories())
+                                );
+                            }
+                        } catch (Throwable ignored) {
+                            // Some classes might fail to load if they have static blocks or dependencies
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
 
     public Script createScriptObjectFromFile(String jarFilePath) {
         try (InputStream fileStream = new FileInputStream(jarFilePath);

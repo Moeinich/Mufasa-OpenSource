@@ -257,9 +257,7 @@ public class ScriptSelectionUI {
         startButton.setOnAction(event -> {
             if (selectedEmulator != null) {
                 stage.close();
-                if (metadataDTO.getCategories().contains(ScriptCategory.Local)) {
-                    scriptHandler.startLocalScript(selectedEmulator, metadataDTO.getJarUrl());
-                }
+                scriptHandler.startLocalScript(selectedEmulator, metadataDTO.getJarUrl());
             } else {
                 showAlertDialog("Information", "No script or emulator is selected", Alert.AlertType.INFORMATION);
             }
