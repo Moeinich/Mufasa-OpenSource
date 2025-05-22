@@ -24,7 +24,7 @@ import helpers.scripts.ScriptInstanceLoader;
 import helpers.services.*;
 import helpers.services.utils.BreakServiceSettings;
 import helpers.services.utils.SleepServiceSettings;
-import helpers.testGrounds.ColorScanner;
+import helpers.mColor.ColorScanner;
 import helpers.utils.GameviewCache;
 import helpers.services.utils.AFKServiceSettings;
 import helpers.utils.IsScriptRunning;

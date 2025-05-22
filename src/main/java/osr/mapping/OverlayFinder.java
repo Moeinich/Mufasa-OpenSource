@@ -3,7 +3,7 @@ package osr.mapping;
 import helpers.GetGameView;
 import helpers.Logger;
 import helpers.Color.ColorFinder;
-import helpers.testGrounds.ColorScanner;
+import helpers.mColor.ColorScanner;
 import helpers.visualFeedback.FeedbackObservables;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static helpers.testGrounds.utils.MColorLibrary.FISH_SPOT_COLORS_NEW;
+import static helpers.mColor.utils.MColorLibrary.FISH_SPOT_COLORS_NEW;
 
 public class OverlayFinder {
     private final List<Color> greenOverlay = Arrays.asList(

@@ -16,7 +16,7 @@ import helpers.Color.TemplateMatcher;
 import helpers.emulator.EmulatorManager;
 import helpers.openCV.ImageRecognition;
 import helpers.openCV.utils.MatchedRectangle;
-import helpers.testGrounds.ColorScanner;
+import helpers.mColor.ColorScanner;
 import helpers.utils.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;

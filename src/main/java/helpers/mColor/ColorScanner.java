@@ -1,4 +1,4 @@
-package helpers.testGrounds;
+package helpers.mColor;
 
 import helpers.GetGameView;
 
@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static helpers.testGrounds.utils.RectangleHelper.filterContainedRectangles;
+import static helpers.mColor.utils.RectangleHelper.filterContainedRectangles;
 
 /*
 Example stuff.
