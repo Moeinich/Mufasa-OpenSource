@@ -39,6 +39,8 @@ import scripts.APIClasses.*;
 import scripts.*;
 
 import java.io.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 import static utils.DependencyExtractor.extractDependencies;
 
@@ -54,6 +56,7 @@ public class Initialize {
             if (!libraryExists()) {
                 System.out.println("Libraries not detected, extracting it!");
                 extractDependencies();
+                extractLibrary(libName, resourcePath);
             }
             System.load(resourcePath);
             System.out.println("OpenCV loaded");
@@ -260,5 +263,33 @@ public class Initialize {
         String resourcePath = getResourcePath(libName);
         File destFile = new File(resourcePath);
         return destFile.exists();
+    }
+
+    private static void extractLibrary(String libName, String destinationPath) throws IOException {
+        String desiredEntryPath = "libs/opencv/" + getOSDirectory() + "/" + getArchDirectory() + "/" + libName;
+        File destFile = new File(destinationPath);
+
+        String zipFilePath = SystemUtils.getSystemPath() + "/libs/opencv/libs.zip";
+        try (FileInputStream fis = new FileInputStream(zipFilePath);
+             ZipInputStream zis = new ZipInputStream(fis)) {
+            ZipEntry entry;
+
+            while ((entry = zis.getNextEntry()) != null) {
+                if (entry.getName().equals(desiredEntryPath)) {
+                    if (!destFile.getParentFile().exists()) {
+                        destFile.getParentFile().mkdirs();
+                    }
+
+                    try (OutputStream fos = new BufferedOutputStream(new FileOutputStream(destFile))) {
+                        byte[] buffer = new byte[4096];
+                        int read;
+                        while ((read = zis.read(buffer)) != -1) {
+                            fos.write(buffer, 0, read);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
     }
 }
