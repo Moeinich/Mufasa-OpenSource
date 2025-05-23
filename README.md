@@ -7,7 +7,7 @@ This was a project started by the both of us, and we made it equally.
 **src**: Contains the entire source code of the client in full<br/>
 **dependencies**: Contains the dependencies required by the client, the client extracts these itself<br/>
 # REQUIREMENTS<br/>
-BellSoft JDK 11, which can be downloaded here for windows: **https://download.bell-sw.com/java/11.0.22+12/bellsoft-jdk11.0.22+12-windows-amd64-full.msi**<br/>
+BellSoft JDK 11.0.22+12, which can be downloaded here for windows: **https://download.bell-sw.com/java/11.0.22+12/bellsoft-jdk11.0.22+12-windows-amd64-full.msi**<br/>
 or here for MacOS: **https://mega.nz/file/dHBmTZCS#e6dNgL3gTfWtZ0gsxlbiPtrC7XMbMTcBn9_pidKuIfY**<br/>
 <br/>
 The client ships with all the scripts that were active/working once it stopped being developed.<br/>
