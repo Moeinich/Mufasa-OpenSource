@@ -1,9 +1,11 @@
 Mufasa was open sourced on the 22nd of April 2025. Forked from JustDavyy to also showcase it on my profile and make potential improvements.
 
+This was a project started by the both of us, and we made it equally. 
+
 # SUMMARY
 
-**Client code**: Contains the entire source code of the client in full<br/>
-**dependencies**: Contains the dependencies required by the client (basically unzips the zip archive to %localappdata%\MufasaOpenSource for windows or /Users/<user>/.Mufasa for MacOS<br/>
+**src**: Contains the entire source code of the client in full<br/>
+**dependencies**: Contains the dependencies required by the client, the client extracts these itself<br/>
 # REQUIREMENTS<br/>
 BellSoft JDK 11, which can be downloaded here for windows: **https://download.bell-sw.com/java/11.0.22+12/bellsoft-jdk11.0.22+12-windows-amd64-full.msi**<br/>
 or here for MacOS: **https://mega.nz/file/dHBmTZCS#e6dNgL3gTfWtZ0gsxlbiPtrC7XMbMTcBn9_pidKuIfY**<br/>
@@ -11,7 +13,6 @@ or here for MacOS: **https://mega.nz/file/dHBmTZCS#e6dNgL3gTfWtZ0gsxlbiPtrC7XMbM
 The client ships with all the scripts that were active/working once it stopped being developed.<br/>
 The client no longer has any auth checks or instance limit<br/>
 ## Links
-**Client code direct link**: https://github.com/Moeinich/Mufasa-OpenSource/tree/main/Client%20code/src/main/java<br/>
 **Script repository of JustDavyy:** https://github.com/JustDavyy/Mufasa-Scripts<br/>
 **Script repository of Moeinich:** https://github.com/Moeinich/Public-Scripts<br/>
 **Mufasa SDK Repository direct link:** https://github.com/Mufasa-SDK/SDKRepo<br/>
