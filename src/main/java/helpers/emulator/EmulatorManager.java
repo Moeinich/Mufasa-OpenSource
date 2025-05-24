@@ -2,6 +2,7 @@ package helpers.emulator;
 
 import helpers.Logger;
 import helpers.adb.ADBHandler;
+import helpers.cacheHandler.RSPreferenceUpdater;
 import helpers.utils.GameviewCache;
 import helpers.utils.IsScriptRunning;
 import org.jetbrains.annotations.NotNull;
@@ -28,14 +29,16 @@ public class EmulatorManager {
     private final Map<String, ScheduledFuture<?>> captureTasks = new ConcurrentHashMap<>();
     private final ScheduledExecutorService scheduler;
     private final ExecutorService executorService;
+    private final RSPreferenceUpdater rsPreferenceUpdater;
 
-    public EmulatorManager(Logger logger, ADBHandler adbHandler, EmulatorHelper emulatorHelper, GameviewCache gameviewCache, IsScriptRunning isScriptRunning, DirectCapture directCapture) {
+    public EmulatorManager(Logger logger, ADBHandler adbHandler, EmulatorHelper emulatorHelper, GameviewCache gameviewCache, IsScriptRunning isScriptRunning, DirectCapture directCapture, RSPreferenceUpdater rsPreferenceUpdater) {
         this.logger = logger;
         this.adbHandler = adbHandler;
         this.emulatorHelper = emulatorHelper;
         this.gameviewCache = gameviewCache;
         this.isScriptRunning = isScriptRunning;
         this.directCapture = directCapture;
+        this.rsPreferenceUpdater = rsPreferenceUpdater;
 
 
         ThreadFactory schedulerThreadFactory = new CaptureThreadFactory("CaptureScheduler");
@@ -72,6 +75,7 @@ public class EmulatorManager {
             return; // No selected device, do nothing
         }
 
+        rsPreferenceUpdater.updatePreferencesFile(emulator); // Update the in-game settings for the device
         captureTasks.computeIfAbsent(selectedDevice, k -> scheduler.scheduleAtFixedRate(() -> executorService.submit(() -> captureAndStoreScreenshot(selectedDevice)), 0, GAME_REFRESHRATE.get(), TimeUnit.MILLISECONDS));
     }
 

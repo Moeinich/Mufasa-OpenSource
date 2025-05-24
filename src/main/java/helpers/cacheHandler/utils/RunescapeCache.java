@@ -41,6 +41,36 @@ public class RunescapeCache {
     }
 
     /**
+     * Retrieves the RS cache location for the given device.
+     * It checks three possible locations on the connected device via ADB.
+     * If one of them exists, it is cached and returned. If none exist,
+     * a default path is returned based on the IS_WINDOWS_USER flag.
+     *
+     * @param deviceIdentifier A unique identifier for the device.
+     * @return The RS cache location string.
+     */
+    public static String getRsPreferencesLocation(String deviceIdentifier) {
+        return RS_CACHE_LOCATION_CACHE.get(deviceIdentifier, key -> {
+            String[] possiblePaths = new String[] {
+                    "/sdcard/Android/data/com.jagex.oldscape.android/files/Old School Runescape/",
+                    "/0/android/data/com.jagex.oldscape.android/files/Old School Runescape/",
+                    "storage/self/primary/android/data/com.jagex.oldscape.android/files/Old School Runescape/"
+            };
+
+            for (String path : possiblePaths) {
+                if (checkPathExists(path)) {
+                    return path;
+                }
+            }
+
+            // If none of the paths exist, fall back to a default.
+            return IS_WINDOWS_USER
+                    ? "/storage/emulated/0/android/data/com.jagex.oldscape.android/files/Old School Runescape/"
+                    : "storage/self/primary/android/data/com.jagex.oldscape.android/files/Old School Runescape/";
+        });
+    }
+
+    /**
      * Uses ADB to check if a directory exists on the connected device.
      *
      * @param path The directory path to check.

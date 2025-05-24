@@ -8,13 +8,16 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import static helpers.cacheHandler.utils.RunescapeCache.getRsCacheLocation;
+import static helpers.cacheHandler.utils.RunescapeCache.getRsPreferencesLocation;
 
 public class RSPreferenceUpdater {
     private final ADBHandler adbHandler;
+    public static final int DEFAULT_WORLD = 308;
 
     public RSPreferenceUpdater(ADBHandler adbHandler) {
         this.adbHandler = adbHandler;
     }
+
 
     /**
      * Updates the preferences_client.dat file on the device by replacing
@@ -26,38 +29,41 @@ public class RSPreferenceUpdater {
      * @param deviceId the unique device identifier (e.g., "emulator-5554")
      */
     public void updatePreferencesFile(String deviceId) {
-        System.out.println("Updating in-game settings for device: " + deviceId);
-        String filePath = getRsCacheLocation(deviceId) + "preferences_client.dat";
+        System.out.println("Writing full preferences file for device: " + deviceId);
+        String filePath = getRsPreferencesLocation(deviceId) + "preferences_client.dat";
 
-        // Pull the current file content from the device
-        byte[] fileData = pullFileFromDevice(deviceId, filePath);
-        if (fileData == null) {
-            System.err.println("Failed to fetch preferences file from device " + deviceId);
-            return;
-        }
+        String fileContent = String.join("\n", new String[] {
+                "AntiAliasingSampleLevel 0",
+                "Brightness 55",
+                "CachedUserName",
+                "DefaultWorldId " + DEFAULT_WORLD,
+                "DisplayBuildInfo 0",
+                "DisplayFps 15",
+                "DrawDistance 25",
+                "FpsLimit 15",
+                "Fullscreen 0",
+                "HapticFeedbackStrength 0",
+                "HideUserName 0",
+                "IsSfx8Bit 1",
+                "LastWorldId 0",
+                "MasterVolume 0",
+                "MuteTitleScreen 0",
+                "PluginSafeMode 0",
+                "ScreenshotPath /storage/emulated/0/Android/data/com.jagex.oldscape.android/files",
+                "SideBarsWidth 0",
+                "TermsAndPrivacy -1",
+                "TitleVolume 0",
+                "UIQuality 1",
+                "WindowHeight 540",
+                "WindowMode 2",
+                "WindowSavedPosition",
+                "WindowTopmost 0",
+                "WindowWidth 894"
+        }) + "\n";
 
-        // Convert bytes to a UTF-8 string
-        String fileContent = new String(fileData, StandardCharsets.UTF_8);
-        StringBuilder updatedContent = new StringBuilder();
-
-        // Process each line and update target keys
-        String[] lines = fileContent.split("\\r?\\n");
-        for (String line : lines) {
-            if (line.startsWith("FpsLimit")) {
-                updatedContent.append("FpsLimit 15\n");
-            } else if (line.startsWith("Brightness")) {
-                updatedContent.append("Brightness 95\n");
-            } else if (line.startsWith("DrawDistance")) {
-                updatedContent.append("DrawDistance 25\n");
-            } else {
-                updatedContent.append(line).append("\n");
-            }
-        }
-
-        // Push the updated file back to the device (overwrite existing file)
-        boolean success = pushFileToDevice(deviceId, filePath, updatedContent.toString().getBytes(StandardCharsets.UTF_8));
+        boolean success = pushFileToDevice(deviceId, filePath, fileContent.getBytes(StandardCharsets.UTF_8));
         if (!success) {
-            System.err.println("Failed to upload updated preferences file to device " + deviceId);
+            System.err.println("Failed to write preferences file to device " + deviceId);
         }
     }
 
