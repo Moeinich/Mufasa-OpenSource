@@ -52,32 +52,11 @@ application {
 
 shadowJar {
     archiveFileName = 'Mufasa.jar'
-    destinationDirectory = file('/ClientJar/')
+    destinationDirectory = file('ClientJar/')
     manifest {
         attributes(
                 'Manifest-Version': '1.0',
                 'Created-By': 'Mufasa'
         )
-    }
-    finalizedBy 'copyJarToDev'
-}
-
-tasks.register('copyJarToDev') {
-    dependsOn shadowJar
-    doLast {
-        def outputDir = file('/ClientJar/')
-        def originalFile = new File(outputDir, 'Mufasa.jar')
-        def copyFile = new File(outputDir, 'Mufasa_dev.jar')
-
-        if (originalFile.exists()) {
-            copy {
-                from originalFile
-                into outputDir
-                rename { 'Mufasa_dev.jar' }
-            }
-            println "Copied Mufasa.jar to Mufasa_dev.jar"
-        } else {
-            throw new GradleException("Mufasa.jar not found!")
-        }
     }
 }

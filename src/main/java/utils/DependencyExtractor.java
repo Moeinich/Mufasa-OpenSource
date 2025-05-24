@@ -4,42 +4,59 @@ import java.io.*;
 import java.util.zip.*;
 
 public class DependencyExtractor {
+    private static final String ZIP_PREFIX = "dependencies/";
+    private static final String PLATFORM_TOOLS_PREFIX = ZIP_PREFIX + "platform-tools/";
+
     public static void extractDependencies() throws IOException {
         String destinationDir = SystemUtils.getSystemPath();
 
-        try (InputStream resourceStream = DependencyExtractor.class.getResourceAsStream("/dependencies.zip")) {
-            if (resourceStream == null) {
+        // 1) Unpack everything under dependencies/, except platform-tools
+        try (InputStream res = DependencyExtractor.class.getResourceAsStream("/dependencies.zip")) {
+            if (res == null) {
                 throw new FileNotFoundException("Could not find dependencies.zip in resources.");
             }
-
-            try (ZipInputStream zis = new ZipInputStream(resourceStream)) {
+            try (ZipInputStream zis = new ZipInputStream(res)) {
                 ZipEntry entry;
                 while ((entry = zis.getNextEntry()) != null) {
-                    String entryName = entry.getName();
-                    String[] parts = entryName.split("/", 2);
-                    if (parts.length < 2) continue;
+                    String name = entry.getName();
 
-                    String cleanName = parts[1]; // strip "dependencies/" prefix
-                    File outFile = new File(destinationDir, cleanName);
+                    // ←— ADD THESE TWO GUARDS:
+                    //   a) must start with "dependencies/"
+                    //   b) skip the old platform-tools folder
+                    if (!name.startsWith(ZIP_PREFIX)
+                            || name.startsWith(PLATFORM_TOOLS_PREFIX)) {
+                        zis.closeEntry();
+                        continue;
+                    }
+
+                    // safe to strip the "dependencies/" prefix now
+                    String relPath = name.substring(ZIP_PREFIX.length());
+                    File outFile = new File(destinationDir, relPath);
 
                     if (entry.isDirectory()) {
-                        outFile.mkdirs();
+                        if (!outFile.isDirectory() && !outFile.mkdirs()) {
+                            throw new IOException("Failed to create dir: " + outFile);
+                        }
                     } else {
                         File parent = outFile.getParentFile();
-                        if (!parent.exists()) {
-                            parent.mkdirs();
+                        if (!parent.isDirectory() && !parent.mkdirs()) {
+                            throw new IOException("Failed to create dir: " + parent);
                         }
-
                         try (OutputStream os = new BufferedOutputStream(new FileOutputStream(outFile))) {
-                            byte[] buffer = new byte[4096];
-                            int read;
-                            while ((read = zis.read(buffer)) != -1) {
-                                os.write(buffer, 0, read);
+                            byte[] buf = new byte[4096];
+                            int len;
+                            while ((len = zis.read(buf)) != -1) {
+                                os.write(buf, 0, len);
                             }
                         }
                     }
+
+                    zis.closeEntry();
                 }
             }
         }
+
+        // 2) Now install platform-tools via network
+        PlatformToolsInstaller.install();
     }
 }
