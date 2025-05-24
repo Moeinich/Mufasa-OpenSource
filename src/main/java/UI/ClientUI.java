@@ -31,7 +31,7 @@ public class ClientUI {
     private ListView<String> emulatorListview;
     private final MenuButton devMenuButton;
 
-    public static String VERSION_NUMBER = "OpenSource 1.0.4";
+    public static String VERSION_NUMBER = "OpenSource " +  CLIENT_VERSION;
 
     public ClientUI(ScriptExecutor scriptExecutor, IsScriptRunning isScriptRunning, MapUI mapUI, GraphUI graphUI, BreakUI breakUI, HopUI hopUI, AccountManagerUI accountManagerUI, Logger logger, ADBHandler adbHandler, EmulatorManager emulatorManager, MainUI mainUI, DevUI devUI) {
         this.scriptExecutor = scriptExecutor;

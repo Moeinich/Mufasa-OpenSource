@@ -4,9 +4,7 @@ import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonBar;
-import javafx.scene.control.DialogPane;
+import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -18,9 +16,15 @@ import utils.SystemUtils;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static utils.Constants.*;
 
@@ -35,6 +39,10 @@ public class Mufasa extends Application {
     @Override
     public void start(Stage primaryStage) {
         checkJavaVersion();
+
+        if (!checkForUpdates()) {
+            return;
+        }
         doStart(primaryStage);
     }
 
@@ -134,5 +142,99 @@ public class Mufasa extends Application {
             alert.setOnCloseRequest(event -> System.exit(0));
             alert.showAndWait();
         }
+    }
+
+
+    /**
+     * Checks GitHub for the latest release tag, compares to our CLIENT_VERSION,
+     * and if there’s a mismatch, informs the user.
+     */
+    /**
+     * @return true if we should proceed to launching the client;
+     *         false if the user clicked “Open Releases” (and we exited).
+     */
+    private boolean checkForUpdates() {
+        String apiUrl =
+                "https://api.github.com/repos/Moeinich/Mufasa-OpenSource/releases/latest";
+        String latestTag;
+        try {
+            HttpURLConnection conn = (HttpURLConnection) new URL(apiUrl).openConnection();
+            conn.setRequestMethod("GET");
+            conn.setRequestProperty("Accept", "application/vnd.github.v3+json");
+            conn.setRequestProperty("User-Agent", "Mufasa-Client");
+
+            if (conn.getResponseCode() != 200) {
+                conn.disconnect();
+                return true;  // can’t check → just proceed
+            }
+
+            try (BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(conn.getInputStream()))) {
+                StringBuilder json = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    json.append(line);
+                }
+                Matcher m = Pattern.compile("\"tag_name\"\\s*:\\s*\"([^\"]+)\"")
+                        .matcher(json);
+                if (!m.find()) {
+                    return true; // malformed → proceed
+                }
+                latestTag = m.group(1);
+            } finally {
+                conn.disconnect();
+            }
+        } catch (Exception e) {
+            System.err.println("Update check failed: " + e.getMessage());
+            return true;  // on error, just proceed
+        }
+
+        // if no newer version, just proceed
+        if (latestTag.equals(CLIENT_VERSION)) {
+            return true;
+        }
+
+        // New version exists → block and ask user
+        Alert dialog = new Alert(Alert.AlertType.NONE);
+        dialog.setTitle("Update Available");
+        dialog.setHeaderText("A new Mufasa release is out!");
+        dialog.setContentText(String.format(
+                "You have %s but the latest is %s.\nWhere would you like to go?",
+                CLIENT_VERSION, latestTag
+        ));
+
+        ButtonType skipBtn = new ButtonType("Skip", ButtonBar.ButtonData.CANCEL_CLOSE);
+        ButtonType openBtn = new ButtonType("Open Releases", ButtonBar.ButtonData.OK_DONE);
+        dialog.getButtonTypes().setAll(skipBtn, openBtn);
+
+        // styling (copy your existing styles)
+        DialogPane dp = dialog.getDialogPane();
+        dp.setStyle("-fx-background-color: #1d1314;");
+        ((Label) dp.lookup(".content.label")).setTextFill(Color.WHITE);
+        ButtonBar bb = (ButtonBar) dp.lookup(".button-bar");
+        bb.getButtons().forEach(b ->
+                b.setStyle("-fx-background-color: #f3c244; -fx-text-fill: black; -fx-font-size: 14px;")
+        );
+        ((Stage) dp.getScene().getWindow()).getIcons().add(MUFASA_LOGO);
+
+        // showAndWait() blocks until user clicks
+        ButtonType choice = dialog.showAndWait().orElse(skipBtn);
+
+        if (choice == openBtn) {
+            try {
+                Desktop.getDesktop().browse(
+                        new java.net.URI(
+                                "https://github.com/Moeinich/Mufasa-OpenSource/releases/latest"
+                        )
+                );
+            } catch (Exception e) {
+                System.err.println("Failed to open browser: " + e.getMessage());
+            }
+            Platform.exit();
+            return false;
+        }
+
+        // Skip → continue startup
+        return true;
     }
 }

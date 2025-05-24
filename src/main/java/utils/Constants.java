@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 
 
 public class Constants {
+    public static final String CLIENT_VERSION = "1.0.5";
     public static final String OS_WIN = "win";
     public static final String OS_MAC = "mac";
     public static final String PLATFORM_TOOLS = "platform-tools";
