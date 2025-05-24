@@ -2,7 +2,6 @@ package helpers.emulator;
 
 import helpers.Logger;
 import helpers.adb.ADBHandler;
-import helpers.cacheHandler.RSPreferenceUpdater;
 import helpers.utils.GameviewCache;
 import helpers.utils.IsScriptRunning;
 import org.jetbrains.annotations.NotNull;
@@ -29,16 +28,15 @@ public class EmulatorManager {
     private final Map<String, ScheduledFuture<?>> captureTasks = new ConcurrentHashMap<>();
     private final ScheduledExecutorService scheduler;
     private final ExecutorService executorService;
-    private final RSPreferenceUpdater rsPreferenceUpdater;
 
-    public EmulatorManager(Logger logger, ADBHandler adbHandler, EmulatorHelper emulatorHelper, GameviewCache gameviewCache, IsScriptRunning isScriptRunning, DirectCapture directCapture, RSPreferenceUpdater rsPreferenceUpdater) {
+    public EmulatorManager(Logger logger, ADBHandler adbHandler, EmulatorHelper emulatorHelper, GameviewCache gameviewCache, IsScriptRunning isScriptRunning, DirectCapture directCapture) {
         this.logger = logger;
         this.adbHandler = adbHandler;
         this.emulatorHelper = emulatorHelper;
         this.gameviewCache = gameviewCache;
         this.isScriptRunning = isScriptRunning;
         this.directCapture = directCapture;
-        this.rsPreferenceUpdater = rsPreferenceUpdater;
+
 
         ThreadFactory schedulerThreadFactory = new CaptureThreadFactory("CaptureScheduler");
         ThreadFactory executorThreadFactory = new CaptureThreadFactory("CaptureExecutor");
@@ -74,7 +72,6 @@ public class EmulatorManager {
             return; // No selected device, do nothing
         }
 
-        rsPreferenceUpdater.updatePreferencesFile(emulator); //Set the in-game settings on this device to what we expect on Mufasa.
         captureTasks.computeIfAbsent(selectedDevice, k -> scheduler.scheduleAtFixedRate(() -> executorService.submit(() -> captureAndStoreScreenshot(selectedDevice)), 0, GAME_REFRESHRATE.get(), TimeUnit.MILLISECONDS));
     }
 

@@ -110,7 +110,7 @@ public class Initialize {
         classes.templateMatcher = new TemplateMatcher(classes.getGameView);
 
         classes.emulatorHelper = new EmulatorHelper(classes.logger, classes.adbHandler);
-        classes.emulatorManager = new EmulatorManager(classes.logger, classes.adbHandler, classes.emulatorHelper, classes.gameviewCache, classes.isScriptRunning, classes.directCapture, classes.rsPreferenceUpdater);
+        classes.emulatorManager = new EmulatorManager(classes.logger, classes.adbHandler, classes.emulatorHelper, classes.gameviewCache, classes.isScriptRunning, classes.directCapture);
 
         // Utility things
         System.out.println("Creating utility objects");
