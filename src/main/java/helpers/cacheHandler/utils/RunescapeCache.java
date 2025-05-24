@@ -48,7 +48,6 @@ public class RunescapeCache {
      */
     private static boolean checkPathExists(String path) {
         try {
-            // The command echoes "exists" if the directory is present.
             String command = "if [ -d \"" + path + "\" ]; then echo exists; fi";
             ProcessBuilder pb = new ProcessBuilder("adb", "shell", command);
             Process process = pb.start();
@@ -59,8 +58,7 @@ public class RunescapeCache {
 
             return output != null && output.trim().equals("exists");
         } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+            return false;
         }
-        return false;
     }
 }

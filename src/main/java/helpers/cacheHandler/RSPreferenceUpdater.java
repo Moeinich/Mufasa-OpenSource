@@ -26,6 +26,7 @@ public class RSPreferenceUpdater {
      * @param deviceId the unique device identifier (e.g., "emulator-5554")
      */
     public void updatePreferencesFile(String deviceId) {
+        System.out.println("Updating in-game settings for device: " + deviceId);
         String filePath = getRsCacheLocation(deviceId) + "preferences_client.dat";
 
         // Pull the current file content from the device
